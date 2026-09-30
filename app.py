@@ -3,7 +3,7 @@ import pandas as pd
 import pickle
 
 
-with open("model/insurance_model.pkl", "rb") as file:
+with open("model/insurance_model.pkl", "wb") as file:
     model = pickle.load(file)
 
 st.set_page_config(
